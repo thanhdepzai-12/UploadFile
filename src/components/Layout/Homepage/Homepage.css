@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.ant-card {
+    height: 80vh !important;
+}
+.main-list {
+    height: 22rem !important;
+    overflow-y: scroll;
+}
+.main-list::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+.main-list::-webkit-scrollbar-thumb {
+    width: 0.3rem;
+    background-color: rgba(128, 128, 128, 0.318);
+    border-radius: 1rem;
+  }
+.list-item {
+    background-color: #323232;
+    color: white;
+    border-radius: 10rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+}
+.btn {
+    border-radius: 10rem !important;
+}
+.show-file-name {
+    background-color: #323232;
+    width: 100%;
+    height: 3.35rem;
+    border-radius: 10rem;
+    margin-block: 1.2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    margin: 0 !important;
+
+}
+.ant-modal-footer {
+    display: none !important;
+}
+.ant-modal-close {
+    display: none;
+}
