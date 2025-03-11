@@ -18,19 +18,18 @@ const {handleUpload, handleDelete,documents,loading,fileName,handleView,showModa
     <div>
     <Card style={{ maxWidth: 600, margin: "auto", background: "#1c1c1c", color: "#fff" }}>
       <h2 style={{ color: "#fff" }}>Upload Documents</h2>
-      <div className="show-file-name">{fileName ?  <p>{fileName}</p> : <p></p>}</div>
-        <button className="btn btn-danger" onClick={showModal}> Upload file
+        <button className="btn btn-danger w-100" onClick={showModal}> Upload file
         </button>
 
         <Modal title="Upload File" open={isModalOpen} >
         <Dragger beforeUpload={handleBeforeUpload}  multiple={true} showUploadList={false}>
-            { check ? <div>{file.name}</div> :
+            { check ? <div style={{ color: "#fff" }}>{file.name}</div> :
             <div>
       <p className="ant-upload-drag-icon">
         <InboxOutlined />
       </p>
-      <p className="ant-upload-text">Click or drag file to this area to upload</p>
-      <p className="ant-upload-hint">Only PDF files are allowed</p>
+      <p className="ant-upload-text" style={{ color: "#fff" }}>Click or drag file to this area to upload</p>
+      <p className="ant-upload-hint" style={{ color: "#fff" }}>Only PDF files are allowed</p>
       </div>
 }
     </Dragger>
