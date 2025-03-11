@@ -18,7 +18,7 @@ const {handleUpload, handleDelete,documents,loading,fileName,handleView,showModa
     <div>
     <Card style={{ maxWidth: 600, margin: "auto", background: "#1c1c1c", color: "#fff" }}>
       <h2 style={{ color: "#fff" }}>Upload Documents</h2>
-        <button className="btn btn-danger w-100" onClick={showModal}> Upload file
+        <button className="btn btn-danger w-100" onClick={showModal}> {loading ? "Đang tải..." : "Upload"}
         </button>
 
         <Modal title="Upload File" open={isModalOpen} >
